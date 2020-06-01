@@ -6,14 +6,24 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+#profile {
+	border-radius: 50% 50% 50% 50%;
+	border-width: 3px;
+	border-style: solid;
+    
+}
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-display-left w3-padding-64" style="z-index:3;width:300px;" id="mySidebar">
 		<div class="w3-container w3-center">
 			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu"><i class="fa fa-remove"></i></a>
-		    <img src="profile.jpg" style="width:45%;" class="w3-circle w3-center"><br><br>
+		    <img src="profile.jpg" id="profile" style="width:45%;" class="w3-center"><br><br>
 		    <h4 class="w3-center"><b>Vismay Srivastava</b></h4>
 		</div>
 		<div class="w3-bar-block w3-center">
@@ -26,31 +36,32 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Contact</a>
 		</div>
 		<div class="w3-panel w3-large w3-center">
-			<a href="https://www.linkedin.com/in/vismay2303" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-		    <a href="https://github.com/vismay2303" target="_blank"><i class="fa fa-github w3-hover-opacity w3-margin-left"></i></a>
-		    <a href="https://www.instagram.com/vismay_23__/" target="_blank"><i class="fa fa-instagram w3-hover-opacity w3-margin-left"></i></a>
-		    <a href="https://www.facebook.com/vismay.srivastava.9/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity w3-margin-left"></i></a>
+			<a href="https://www.linkedin.com/in/vismay2303" target="_blank"><i class="fa fa-linkedin w3-hover-opacity w3-xlarge" style="color:#A6A6A6;"></i></a>
+		    <a href="https://github.com/vismay2303" target="_blank"><i class="fa fa-github w3-hover-opacity w3-margin-left w3-xlarge" style="color:#A6A6A6;"></i></a>
+		    <a href="https://www.instagram.com/vismay_23__/" target="_blank"><i class="fa fa-instagram w3-hover-opacity w3-margin-left w3-xlarge" style="color:#A6A6A6;"></i></a>
+		    <a href="https://www.facebook.com/vismay.srivastava.9/" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity w3-margin-left w3-xlarge" style="color:#A6A6A6;"></i></a>
 		</div>
 	</nav>
 	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 	<!-- !PAGE CONTENT! -->
 		<div class="w3-main" style="margin-left:300px">
-			<div class="w3-container w3-padding-large" style="margin-bottom:32px" id="about">
-				<h4>About Me</h4>
+			<section class="w3-container w3-padding-large" style="margin-bottom:32px;min-height: 100%" id="about">
+				<h3>About Me</h3>
+				<h4>Vismay Srivastava</h4>
+				<p>I am final year B.Tech undergraduate student from Vellore Institute of Technology. I am an Google certified Android developer and a competitive programming enthusiast. 
+			</section>
+			<section class="w3-container w3-padding-large" style="margin-bottom:32px;min-height: 100%" id="skills">
+				<h3>Technical Skills</h3>
 			    <!-- Progress bars / Skills -->
-			    <p>C++</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:80%;padding:4px">80%</div>
-			    </div>
-			    <p>Web Design - HTML & CSS</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:75%;padding:4px">75%</div>
-			    </div>
-			    <p>Android Development</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:80%;padding:4px">80%</div>
-			    </div>
+			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>C++</b> (Proficient) </p>
+			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Python</b> (Proficient) </p>
+			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Android Development</b> (Proficient)</p>
+			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Web Design - HTML & CSS</b> (Intermediate) </p>
+			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Competitive Programming</b> (Intermediate) </p>
+			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>SQL, Firebase</b> (Intermediate) </p>
+			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Arduino Programming</b> (Beginner)</p>
+			    
 			    <a href="Vismay's Resume Updated.pdf" download target="_blank">
 			    	<p>
 				      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
@@ -59,46 +70,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 				    </p>
 				</a>
 			</div>
-			<div class="w3-container w3-padding-large" style="margin-bottom:32px" id="skills">
-				<h4>Technical Skills</h4>
-			    <!-- Progress bars / Skills -->
-			    <p>C++</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:80%;padding:4px">80%</div>
-			    </div>
-			    <p>Web Design - HTML & CSS</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:75%;padding:4px">75%</div>
-			    </div>
-			    <p>Android Development</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:80%;padding:4px">80%</div>
-			    </div>
-			    <p>Python</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:80%;padding:4px">80%</div>
-			    </div>
-			    <p>Competitive Programming</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:70%;padding:4px">70%</div>
-			    </div>
-			    <p>SQL, Firebase</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:65%;padding:4px">65%</div>
-			    </div>
-			    <p>Arduino Programming</p>
-			    <div class="w3-grey">
-			      <div class="w3-container w3-dark-grey w3-center" style="width:60%;padding:4px">60%</div>
-			    </div>
-			    <a href="Vismay's Resume Updated.pdf" download target="_blank">
-			    	<p>
-				      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-				        <i class="fa fa-download w3-margin-right"></i>Download Resume
-				      </button>
-				    </p>
-				</a>
-			</div>
-		</div>
+		</section>
+		<hr>
 
 
 <script>
