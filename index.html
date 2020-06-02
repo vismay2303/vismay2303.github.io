@@ -12,15 +12,40 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body {
+	margin:0px;
+	padding:0px;
+}
 #profile {
 	border-radius: 50% 50% 50% 50%;
 	border-width: 3px;
 	border-style: solid;
-    
 }
+#mySidebar {
+	border-radius: 50px;
+	margin-top: 32px;
+	margin-left: 32px;
+	box-shadow: 5px 10px 15px #8888DD;
+	padding-top: 100px;
+	height: 90%;
+	margin-bottom: 32px;
+}
+#about,#skills{
+	border-radius: 50px;
+	box-shadow: 5px 10px 15px #8888DD;
+}
+#about,#skills{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-right:32px;
+	margin-top: 32px;
+}
+
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px">
-	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-display-left w3-padding-64" style="z-index:3;width:300px;" id="mySidebar">
+<body class="w3-light-grey w3-content" style="max-width:1600px;">
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-display-left" style="width:20%;" id="mySidebar">
 		<div class="w3-container w3-center">
 			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 				<i class="fa fa-remove"></i>
@@ -36,7 +61,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     		<a href="#accomplishments" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Accomplishments</a> 
     		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Contact</a>
 		</div>
-		<div class="w3-panel w3-large w3-center">
+		<div class="w3-panel w3-center">
 			<a href="https://www.linkedin.com/in/vismay2303" target="_blank">
 				<i class="fa fa-linkedin w3-hover-opacity w3-xlarge" style="color:#A6A6A6;"></i>
 			</a>
@@ -54,8 +79,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 	<!-- !PAGE CONTENT! -->
-		<div class="w3-main" style="margin-left:300px">
-			<section class="w3-container w3-padding-large" style="margin-bottom:32px;min-height: 100%" id="about">
+		<div class="w3-main w3-right" style="width:75%">
+			<div class="w3-container" style="margin-bottom:32px;" id="about">
 				<p class="w3-xxlarge"><b>Vismay</b> Srivastava</p>
 				<p class="w3-xlarge">
 					<span style="font-family: Helvetica, Arial, sans-serif;">
@@ -65,8 +90,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 						<i class="fa fa-envelope w3-hover-opacity w3-margin-left w3-xlarge w3-margin-right"></i>srivastavavismay@gmail.com
 					</span>
 				<p align="justify" class="w3-large">I am a final year B.Tech undergraduate student from Vellore Institute of Technology. I am a Google certified Android developer and a competitive programming enthusiast. I am well versed with databases like SQL and Firebase. I have been practising competitive programming since two years. I am highly interested in Machine Learning and Internet of Things(IoT). Since my childhood, I have always been fascinated by the power of technology. This is one of the main reasons for me to pursue my career in computer science. I have worked with Arduino and NodeMCU to design various small-scale automated systems for my college students.</p>
-			</section><hr>
-			<section class="w3-container w3-padding-large" style="margin-bottom:32px;min-height: 100%" id="skills">
+			</div>
+			<div class="w3-container" style="margin-bottom:32px;" id="skills">
 				<h3>Technical Skills</h3>
 			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>C++</b> (Proficient) </p>
 			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Python</b> (Proficient) </p>
@@ -83,9 +108,11 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 				      </button>
 				    </p>
 				</a>
-			</section>>
+			</div>
+			<section class="w3-container w3-padding-large" style="margin-bottom:32px;" id="interests">
+				<h3>Interests</h3>
+			</section>
 		</div>
-		<hr>
 
 
 <script>
