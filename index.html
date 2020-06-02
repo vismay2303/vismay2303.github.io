@@ -13,39 +13,36 @@
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 body {
-	margin:0px;
+	margin:32px;
 	padding:0px;
 }
 #profile {
 	border-radius: 50% 50% 50% 50%;
-	border-width: 3px;
-	border-style: solid;
+	box-shadow: 5px 5px 5px #8888DD;
 }
 #mySidebar {
 	border-radius: 50px;
-	margin-top: 32px;
 	margin-left: 32px;
-	box-shadow: 5px 10px 15px #8888DD;
+	box-shadow: 5px 10px 10px #8888DD;
 	padding-top: 100px;
 	height: 90%;
 	margin-bottom: 32px;
 }
-#about,#skills{
+#about,#skills,#interests,#education,#experience,#accomplishments,#contact{
 	border-radius: 50px;
-	box-shadow: 5px 10px 15px #8888DD;
-}
-#about,#skills{
-	padding-top: 50px;
-	padding-bottom: 50px;
-	padding-left: 30px;
+	box-shadow: 5px 10px 10px #8888DD;
+	padding-top: 100px;
+	padding-bottom: 80px;
+	padding-left: 40px;
 	padding-right: 30px;
 	margin-right:32px;
-	margin-top: 32px;
+	background-color: #FFFFFF;
 }
+
 
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px;">
-	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-display-left" style="width:20%;" id="mySidebar">
+	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-center" style="width:20%;" id="mySidebar">
 		<div class="w3-container w3-center">
 			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
 				<i class="fa fa-remove"></i>
@@ -56,63 +53,75 @@ body {
 			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding w3-text-teal">About</a> 
     		<a href="#education" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Education</a> 
     		<a href="#experience" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Experience</a> 
-    		<a href="#skills" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Skills</a> 
-    		<a href="#interests" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Interests</a> 
+    		<a href="#skills" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Technical Skills</a> 
+    		<a href="#interests" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Hobbies & Interests</a> 
     		<a href="#accomplishments" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Accomplishments</a> 
-    		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Contact</a>
+    		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Contact Me</a>
 		</div>
 		<div class="w3-panel w3-center">
 			<a href="https://www.linkedin.com/in/vismay2303" target="_blank">
-				<i class="fa fa-linkedin w3-hover-opacity w3-xlarge" style="color:#A6A6A6;"></i>
+				<i class="fa fa-linkedin w3-hover-opacity w3-xlarge" style="color:#8888DD;"></i>
 			</a>
 		    <a href="https://github.com/vismay2303" target="_blank">
-		    	<i class="fa fa-github w3-hover-opacity w3-margin-left w3-xlarge" style="color:#A6A6A6;"></i>
+		    	<i class="fa fa-github w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
 		    </a>
 		    <a href="https://www.instagram.com/vismay_23__/" target="_blank">
-		    	<i class="fa fa-instagram w3-hover-opacity w3-margin-left w3-xlarge" style="color:#A6A6A6;"></i>
+		    	<i class="fa fa-instagram w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
 		    </a>
 		    <a href="https://www.facebook.com/vismay.srivastava.9/" target="_blank">
-		    	<i class="fa fa-facebook-official w3-hover-opacity w3-margin-left w3-xlarge" style="color:#A6A6A6;"></i>
+		    	<i class="fa fa-facebook-official w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
 		    </a>
 		</div>
 	</nav>
 	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 	<!-- !PAGE CONTENT! -->
-		<div class="w3-main w3-right" style="width:75%">
-			<div class="w3-container" style="margin-bottom:32px;" id="about">
-				<p class="w3-xxlarge"><b>Vismay</b> Srivastava</p>
-				<p class="w3-xlarge">
-					<span style="font-family: Helvetica, Arial, sans-serif;">
-						<i class="fa fa-phone w3-hover-opacity w3-margin-right w3-xlarge"></i>+91-9819287950
-					</span>
-					<span style="font-color:gray;">
-						<i class="fa fa-envelope w3-hover-opacity w3-margin-left w3-xlarge w3-margin-right"></i>srivastavavismay@gmail.com
-					</span>
-				<p align="justify" class="w3-large">I am a final year B.Tech undergraduate student from Vellore Institute of Technology. I am a Google certified Android developer and a competitive programming enthusiast. I am well versed with databases like SQL and Firebase. I have been practising competitive programming since two years. I am highly interested in Machine Learning and Internet of Things(IoT). Since my childhood, I have always been fascinated by the power of technology. This is one of the main reasons for me to pursue my career in computer science. I have worked with Arduino and NodeMCU to design various small-scale automated systems for my college students.</p>
-			</div>
-			<div class="w3-container" style="margin-bottom:32px;" id="skills">
-				<h3>Technical Skills</h3>
-			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>C++</b> (Proficient) </p>
-			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Python</b> (Proficient) </p>
-			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Android Development</b> (Proficient)</p>
-			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Web Design - HTML & CSS</b> (Intermediate) </p>
-			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Competitive Programming</b> (Intermediate) </p>
-			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>SQL, Firebase</b> (Intermediate) </p>
-			    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Arduino Programming</b> (Beginner)</p>
-			    
-			    <a href="Vismay's Resume Updated.pdf" download target="_blank">
-			    	<p>
-				      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
-				        <i class="fa fa-download w3-margin-right"></i>Download Resume
-				      </button>
-				    </p>
-				</a>
-			</div>
-			<section class="w3-container w3-padding-large" style="margin-bottom:32px;" id="interests">
-				<h3>Interests</h3>
-			</section>
+	<div class="w3-main w3-right" style="width:75%">
+		<div class="w3-container" style="margin-bottom:32px;" id="about">
+			<p class="w3-xxlarge"><b>Vismay</b> Srivastava</p>
+			<p class="w3-xlarge">
+				<span style="font-family: Helvetica, Arial, sans-serif;">
+					<i class="fa fa-phone w3-hover-opacity w3-margin-right w3-xlarge"></i>+91-9819287950
+				</span>
+				<span style="font-color:gray;">
+					<i class="fa fa-envelope w3-hover-opacity w3-margin-left w3-xlarge w3-margin-right"></i>srivastavavismay@gmail.com
+				</span>
+			<p align="justify" class="w3-large">I am a final year B.Tech undergraduate student from Vellore Institute of Technology. I am a Google certified Android developer and a competitive programming enthusiast. I am well versed with databases like SQL and Firebase. I have been practising competitive programming since two years. I am highly interested in Machine Learning and Internet of Things(IoT). Since my childhood, I have always been fascinated by the power of technology. This is one of the main reasons for me to pursue my career in computer science. I have worked with Arduino and NodeMCU to design various small-scale automated systems for my college students.</p>
 		</div>
+		<div class="w3-container" style="margin-bottom:32px;" id="education">
+			<h3>Education</h3>
+		</div>
+		<div class="w3-container" style="margin-bottom:32px;" id="experiencne">
+			<h3>Experience</h3>
+		</div>
+		<div class="w3-container" style="margin-bottom:32px;" id="skills">
+			<h3>Technical Skills</h3>
+		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>C++</b> (Proficient) </p>
+		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Python</b> (Proficient) </p>
+		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Android Development</b> (Proficient)</p>
+		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Web Design - HTML & CSS</b> (Intermediate) </p>
+		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Competitive Programming</b> (Intermediate) </p>
+		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>SQL, Firebase</b> (Intermediate) </p>
+		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Arduino Programming</b> (Beginner)</p>
+		    
+		    <a href="Vismay's Resume Updated.pdf" download target="_blank">
+		    	<p>
+			      <button class="w3-button w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom">
+			        <i class="fa fa-download w3-margin-right"></i>Download Resume
+			      </button>
+			    </p>
+			</a>
+		</div>
+		<div class="w3-container" style="margin-bottom:32px;" id="interests">
+			<h3>Interests</h3>
+		</div>
+		<div class="w3-container" style="margin-bottom:32px;" id="accomplishments">
+			<h3>Accomplishments</h3>
+		</div>
+		<div class="w3-container" style="margin-bottom:32px;" id="contact">
+			<h3>Contact Me</h3>
+		</div>
+	</div>
 
 
 <script>
