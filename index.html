@@ -11,34 +11,66 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
-body {
-	margin:32px;
-	padding:0px;
-}
-#profile {
-	border-radius: 50% 50% 50% 50%;
-	box-shadow: 5px 5px 5px #8888DD;
-}
-#mySidebar {
-	border-radius: 50px;
-	margin-left: 32px;
-	box-shadow: 5px 10px 10px #8888DD;
-	padding-top: 100px;
-	height: 90%;
-	margin-bottom: 32px;
-}
-#about,#skills,#interests,#education,#experience,#accomplishments,#contact{
-	border-radius: 50px;
-	box-shadow: 5px 10px 10px #8888DD;
-	padding-top: 100px;
-	padding-bottom: 80px;
-	padding-left: 40px;
-	padding-right: 30px;
-	margin-right:32px;
-	background-color: #FFFFFF;
-}
-
+	@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
+	body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+	body {
+		margin:32px;
+		padding:0px;
+	}
+	#profile {
+		border-radius: 50% 50% 50% 50%;
+		box-shadow: 5px 5px 5px #8888DD;
+	}
+	#mySidebar {
+		border-radius: 50px;
+		margin-left: 32px;
+		box-shadow: 5px 10px 10px #8888DD;
+		padding-top: 100px;
+		height: 90%;
+		margin-bottom: 32px;
+	}
+	#about,#skills,#interests,#education,#experience,#accomplishments,#contact{
+		border-radius: 50px;
+		box-shadow: 5px 10px 10px #8888DD;
+		padding-top: 60px;
+		padding-bottom: 80px;
+		padding-left: 40px;
+		padding-right: 30px;
+		margin-right:32px;
+		background-color: #FFFFFF;
+	}
+	.timeline .column .description p {
+		font-size: 13px;
+		line-height: 20px;
+		margin-left: 20px;
+		margin-top: 10px;
+		font-family: serif;
+	}
+	.timeline .column .description {
+		border-left: 2px solid rgba(0,0,0,0.3);
+	}
+	.timeline .column .rowLeft .titleedhead {
+		margin-top: -60px;
+		font-size: 30px;
+	}
+	.timeline .column .rowRight .dured {
+		margin-top: -60px;
+		font-size: 30px;
+	}
+	.timeline .column .dured {
+		font-size: 30px;
+	}
+	.timeline .column .yearedhead {
+		color: rgba(0,0,0,0.2);
+		font-family: serif;
+		letter-spacing: 3px;
+	}
+	.timeline, .column, .yearedhead, .titleedhead, .description, .desced, .dured, .rowLeft, .rowRight {
+		pading: 0;
+		margin: 0;
+		font-family: "Lato", sans-serif;
+		position: relative;
+	}
 
 </style>
 <body class="w3-light-grey w3-content" style="max-width:1600px;">
@@ -89,7 +121,45 @@ body {
 			<p align="justify" class="w3-large">I am a final year B.Tech undergraduate student from Vellore Institute of Technology. I am a Google certified Android developer and a competitive programming enthusiast. I am well versed with databases like SQL and Firebase. I have been practising competitive programming since two years. I am highly interested in Machine Learning and Internet of Things(IoT). Since my childhood, I have always been fascinated by the power of technology. This is one of the main reasons for me to pursue my career in computer science. I have worked with Arduino and NodeMCU to design various small-scale automated systems for my college students.</p>
 		</div>
 		<div class="w3-container" style="margin-bottom:32px;" id="education">
-			<h3>Education</h3>
+			<div class="w3-container"><p class="w3-xxxlarge">EDUCATION</p></div>
+			<div class="timeline">
+				<div class="column">
+					<p class="w3-jumbo yearedhead">2002</p>
+					<div class="w3-left rowLeft">
+						<p class="titleedhead">Lokhandwala Foundation School</p>	
+					</div>
+					<div class="w3-right rowRight">
+						<p class="dured">May, 2002 - April, 2015</p>
+					</div>
+					<div class="description">
+						<p class="w3-large desced">After shifting from Indore, this was my school in Mumbai, where I completed my primary and secondary education. It was an ICSE school, and just like any other ICSE school, the rules, the strictness and the discipline helped in shaping me and made me become what I am today.</p>
+					</div>
+				</div>
+				<div class="column">
+					<p class="w3-jumbo yearedhead">2015</p>
+					<div class="w3-left rowLeft">
+						<p class="titleedhead">Pace Junior Science College</p>	
+					</div>
+					<div class="w3-right rowRight">
+						<p class="dured">June, 2015 - April, 2017</p>
+					</div>
+					<div class="description">
+						<p class="w3-large desced">This is the place where I am completed my Higher Secondary Education. This was an integrated college where we were given coaching for engineering exams and also taught us like any other college.</p>
+					</div>
+				</div>
+				<div class="column">
+					<p class="w3-jumbo yearedhead">2017</p>
+					<div class="w3-left rowLeft">
+						<p class="titleedhead">Vellore Institute of Technology</p>	
+					</div>
+					<div class="w3-right rowRight">
+						<p class="dured">June, 2017 - Present</p>
+					</div>
+					<div class="description">
+						<p class="w3-large desced">This is the most memorable phase of my life. Here at VIT, I am doing my undergraduation in B.Tech CSE. This phase of my life taught how to handle the most difficult phases of my life and it also helped me shape my career. </p>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="w3-container" style="margin-bottom:32px;" id="experience">
 			<h3>Experience</h3>
