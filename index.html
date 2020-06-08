@@ -21,10 +21,7 @@
 	}
 	#mySidebar {
 		border-radius: 50px;
-		margin-left: 32px;
 		box-shadow: 5px 10px 10px #8888DD;
-		padding-top: 100px;
-		height: 90%;
 		margin-bottom: 32px;
 	}
 	#about,#skills,#interests,#education,#experience,#accomplishments,#contact{
@@ -33,7 +30,9 @@
 		padding-top: 0px;
 		padding-left: 40px;
 		padding-right: 30px;
-		margin-right:32px;
+		width: 84%;
+		margin-left: 8%;
+		margin-right: 8%;
 		background-color: #FFFFFF;
 		font-family: serif;
 	}
@@ -214,58 +213,58 @@
 
 
 </style>
-<body class="w3-light-grey w3-content" style="max-width:1600px;">
-	<nav class="w3-sidebar w3-collapse w3-white w3-animate-left w3-center" style="width:20%;" id="mySidebar">
-		<div class="w3-container w3-center">
-			<a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-				<i class="fa fa-remove"></i>
-			</a>
-		    <img src="profile.jpg" id="profile" style="width:55%;" class="w3-center"><br><br>
-		</div>
-		<div class="w3-bar-block w3-center">
-			<a href="#about" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding w3-text-teal">About</a> 
-    		<a href="#education" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Education</a> 
-    		<a href="#experience" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Experience</a> 
-    		<a href="#skills" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Technical Skills</a> 
-    		<a href="#interests" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Hobbies & Interests</a> 
-    		<a href="#accomplishments" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Accomplishments</a> 
-    		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding">Contact Me</a>
-		</div>
-		<div class="w3-panel w3-center">
-			<a href="https://www.linkedin.com/in/vismay2303" target="_blank">
-				<i class="fa fa-linkedin w3-hover-opacity w3-xlarge" style="color:#8888DD;"></i>
-			</a>
-		    <a href="https://github.com/vismay2303" target="_blank">
-		    	<i class="fa fa-github w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
-		    </a>
-		    <a href="https://www.instagram.com/vismay_23__/" target="_blank">
-		    	<i class="fa fa-instagram w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
-		    </a>
-		    <a href="https://www.facebook.com/vismay.srivastava.9/" target="_blank">
-		    	<i class="fa fa-facebook-official w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
-		    </a>
-		</div>
-	</nav>
-	<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
+<body class="w3-light-grey w3-content w3-center" style="max-width:1600px;">
+	<div class="w3-bar w3-white w3-animate-top w3-center w3-padding-large" style="width:84%;" id="mySidebar">
+		<a href="#about" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding w3-text-teal" style="width: 14%;">About</a> 
+		<a href="#education" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding" style="width: 14%;">Education</a> 
+		<a href="#experience" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding" style="width: 14%;">Experience</a> 
+		<a href="#skills" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding" style="width: 14%;">Technical Skills</a> 
+		<a href="#interests" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding" style="width: 14%;">Hobbies & Interests</a> 
+		<a href="#accomplishments" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding" style="width: 14%;">Accomplishments</a> 
+		<a href="#contact" onclick="w3_close()" class="w3-bar-item w3-center w3-button w3-round-xxlarge w3-padding" style="width: 14%;">Contact Me</a>
+	</div>
 	<!-- !PAGE CONTENT! -->
-	<div class="w3-main w3-right" style="width:75%">
+	<div class="w3-container" style="width:100%;">
 		<div class="w3-container" style="margin-bottom:32px;" id="about">
-			<p class="w3-xxlarge"><b>Vismay</b> Srivastava</p>
-			<p class="w3-xlarge">
-				<span style="font-family: Helvetica, Arial, sans-serif;">
-					<i class="fa fa-phone w3-hover-opacity w3-margin-right w3-xlarge"></i>+91-9819287950
-				</span>
-				<span style="font-color:gray;">
-					<i class="fa fa-envelope w3-hover-opacity w3-margin-left w3-xlarge w3-margin-right"></i>srivastavavismay@gmail.com
-				</span>
-			<p align="justify" class="w3-large aboutmedesc">I am a final year B.Tech undergraduate student from Vellore Institute of Technology. I am a Google certified Android developer and a competitive programming enthusiast. I am well versed with databases like SQL and Firebase. I have been practising competitive programming since two years. I am highly interested in Machine Learning and Internet of Things(IoT). Since my childhood, I have always been fascinated by the power of technology. This is one of the main reasons for me to pursue my career in computer science. I have worked with Arduino and NodeMCU to design various small-scale automated systems for my college students.</p>
+			<div class="w3-container" style="width: 100%;">
+				<div class="w3-container w3-left" style="width: 20%; padding: 2.5% 2.5% 0%;">
+					<img src="profile.jpg" id="profile" style="width:100%;" class="w3-center"><br><br>
+				</div>
+				<div class="w3-container w3-right w3-left-align" style="width: 75%;">
+					<p class="w3-xxlarge" style="padding-top: 30px;margin: 0px;"><b>Vismay</b> Srivastava</p>
+					<p class="w3-xlargen" style="padding: 0px;margin: 0px;">
+						<span style="font-family: Helvetica, Arial, sans-serif;">
+							<i class="fa fa-phone w3-hover-opacity w3-margin-right w3-xlarge"></i>+91-9819287950
+						</span>
+					</p>
+					<p class="w3-xlarge" style="padding: 0px;margin-top: 0px;margin-bottom: 10px;">
+						<span style="font-color:gray;">
+							<i class="fa fa-envelope w3-hover-opacity w3-xlarge w3-margin-right"></i>srivastavavismay@gmail.com
+						</span>
+					</p>
+					<a href="https://www.linkedin.com/in/vismay2303" target="_blank">
+						<i class="fa fa-linkedin w3-hover-opacity w3-xlarge" style="color:#8888DD;"></i>
+					</a>
+			    	<a href="https://github.com/vismay2303" target="_blank">
+			    		<i class="fa fa-github w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
+			    	</a>
+			    	<a href="https://www.instagram.com/vismay_23__/" target="_blank">
+			    		<i class="fa fa-instagram w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
+			    	</a>
+			    	<a href="https://www.facebook.com/vismay.srivastava.9/" target="_blank">
+			    		<i class="fa fa-facebook-official w3-hover-opacity w3-margin-left w3-xlarge" style="color:#8888DD;"></i>
+			    	</a>
+			    </div>
+			</div>
+		    <div>
+				<p align="justify" class="w3-large aboutmedesc">I am a final year B.Tech undergraduate student from Vellore Institute of Technology. I am a Google certified Android developer and a competitive programming enthusiast. I am well versed with databases like SQL and Firebase. I have been practising competitive programming since two years. I am highly interested in Machine Learning and Internet of Things(IoT). Since my childhood, I have always been fascinated by the power of technology. This is one of the main reasons for me to pursue my career in computer science. I have worked with Arduino and NodeMCU to design various small-scale automated systems for my college students.</p>
+			</div>
 		</div>
-		<div class="w3-container" style="margin-bottom:32px;padding-top: 40px" id="education">
+		<div class="w3-container w3-center" style="margin-bottom:32px;padding-top: 40px" id="education">
 			<div class="w3-container"><p class="w3-xxlarge" style="margin: 0px;padding: 0px;">EDUCATION</p></div>
 			<div class="timeline">
 				<div class="column">
-					<p class="w3-jumbo yearedhead">2002</p>
+					<p class="w3-jumbo yearedhead w3-left-align">2002</p>
 					<div class="w3-left rowLeft">
 						<p class="titleedhead">Lokhandwala Foundation School</p>	
 					</div>
@@ -277,7 +276,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<p class="w3-jumbo yearedhead">2015</p>
+					<p class="w3-jumbo yearedhead w3-left-align">2015</p>
 					<div class="w3-left rowLeft">
 						<p class="titleedhead">Pace Junior Science College</p>	
 					</div>
@@ -289,7 +288,7 @@
 					</div>
 				</div>
 				<div class="column">
-					<p class="w3-jumbo yearedhead">2017</p>
+					<p class="w3-jumbo yearedhead w3-left-align">2017</p>
 					<div class="w3-left rowLeft">
 						<p class="titleedhead">Vellore Institute of Technology</p>	
 					</div>
@@ -307,13 +306,13 @@
 		</div>
 		<div class="w3-container" style="margin-bottom:32px;" id="skills">
 			<div class="w3-container"><p class="w3-xxlarge" style="margin-bottom: 30px;padding: 0px;">TECHNICAL SKILLS</p></div>
-		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>C++</b> (Proficient) </p>
-		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Python</b> (Proficient) </p>
-		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Android Development</b> (Proficient)</p>
-		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Web Design - HTML & CSS</b> (Intermediate) </p>
-		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Competitive Programming</b> (Intermediate) </p>
-		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>SQL, Firebase</b> (Intermediate) </p>
-		    <p><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Arduino Programming</b> (Beginner)</p>
+		    <p class="w3-large"><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>C++</b> (Proficient) </p>
+		    <p class="w3-large"><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Python</b> (Proficient) </p>
+		    <p class="w3-large"><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Android Development</b> (Proficient)</p>
+		    <p class="w3-large"><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Web Design - HTML & CSS</b> (Intermediate) </p>
+		    <p class="w3-large"><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Competitive Programming</b> (Intermediate) </p>
+		    <p class="w3-large"><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>SQL, Firebase</b> (Intermediate) </p>
+		    <p class="w3-large"><i class="fa fa-arrow-right w3-margin-left w3-margin-right"></i><b>Arduino Programming</b> (Beginner)</p>
 		    
 		    <a href="Vismay's Resume Updated.pdf" download target="_blank">
 		    	<p>
@@ -426,20 +425,5 @@
 			<div class="w3-container"><p class="w3-xxlarge" style="margin-bottom: 30px;padding: 0px;">CONTACT ME</p></div>
 		</div>
 	</div>
-
-
-<script>
-// Script to open and close sidebar
-function w3_open() {
-    document.getElementById("mySidebar").style.display = "block";
-    document.getElementById("myOverlay").style.display = "block";
-}
- 
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-    document.getElementById("myOverlay").style.display = "none";
-}
-</script>
-
 </body>
 </html>
